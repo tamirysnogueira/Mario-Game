@@ -1,0 +1,123 @@
+@font-face {
+  font-family: MarioBross;
+  src: url(../font/SuperMario256.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: MarioBross;
+}
+
+body main {
+  background-image: url(../img/background.png);
+  background-position: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+body main #logo {
+  width: 700px;
+  -webkit-animation: pulse 0.7s linear infinite;
+          animation: pulse 0.7s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+body main #playersGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+body main #playersGame div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+body main #playersGame div img {
+  width: 20px;
+  -webkit-animation: pulse 0.7s linear infinite;
+          animation: pulse 0.7s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  position: absolute;
+  left: -40px;
+  opacity: 0;
+}
+
+body main #playersGame div h2 {
+  font-size: 30px;
+}
+
+body main #playersGame div:hover img {
+  opacity: 1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+body main h1 {
+  font-family: MarioBross;
+}
+/*# sourceMappingURL=style.css.map */
