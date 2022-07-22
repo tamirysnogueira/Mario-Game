@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +10,47 @@
 <body>
     <main>
         <div id="homeScreen">
-            <img src="img/Super_Mario_World_game_logo.svg.png" alt="" id="logo">
+            <div id="informationsHomeScreen">
+                <img src="img/Super_Mario_World_game_logo.svg.png" alt="" id="logo">
 
-            <div id="playersGame">
-                <div>
-                    <img src="img/seta.png" alt="">
-                    <h2 id="playGame">1 Player Game </h2>
-                    
-                </div>
+                <div id="playersGame">
+                    <div>
+                        <img src="img/seta.png" alt="">
+                        <h2 id="playGame">1 Player Game </h2>
+                        
+                    </div>
 
-                <div>
-                    <img src="img/seta.png" alt="">
-                    <h2>GitHub </h2>
-                    
-                </div>
+                    <div>
+                        <img src="img/seta.png" alt="">
+                        <h2>GitHub </h2>
+                        
+                    </div>
 
-                <div>
-                    <img src="img/seta.png" alt="">
-                    <h2>Linkedin </h2>
-                    
+                    <div>
+                        <img src="img/seta.png" alt="">
+                        <h2>Linkedin </h2>
+                        
+                    </div>
                 </div>
-                
+            
             </div>
 
             <div id="ball"></div>
+        </div>
+
+        <div id="tubeScreen">
+            <div id="instructions">
+                <h1>Use <img src="img/setas-flechas.png" alt=""> para entrar no cano verde</h1>
+            </div>
+
+            <img src="img/mario-direita.gif" alt="" id="mario" onkeypress="marioMove()">
         </div>
         
         
     </main>
     
     
-
     <script src="script/screen.js"></script>
+    <script src="script/moveMario.js"></script>
 </body>
 </html>
